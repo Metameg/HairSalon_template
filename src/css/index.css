@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header nav .logo {
+  width: 50px;
+  height: 50px;
+  background: gray;
+}
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+header nav .nav-links li {
+  margin-left: 2rem;
+}
+header nav .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header nav .book-now {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.hero {
+  background: #f5f5f5;
+  text-align: left;
+  padding: 4rem 2rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hero .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero .hero-content .location {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero .hero-content .hero-buttons .btn {
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.hero .hero-content .hero-buttons .btn.book-now {
+  background: black;
+  color: white;
+}
+.hero .hero-content .hero-buttons .btn.view-services {
+  background: gray;
+  color: black;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.info .hours, .info .description {
+  max-width: 500px;
+}
+.info .hours .schedule .day {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.info .description p {
+  margin-bottom: 1rem;
+}
+.info .description .contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.cutting-edge-styles {
+  background: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.cutting-edge-styles h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cutting-edge-styles p {
+  margin-bottom: 2rem;
+}
+.cutting-edge-styles .instagram-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .cutting-edge-styles .instagram-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.cutting-edge-styles .instagram-gallery .image-placeholder {
+  width: 100%;
+  padding-top: 100%;
+  background: #ccc;
+}
+
+.testimonials {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.testimonials .rating {
+  margin-bottom: 2rem;
+}
+.testimonials .rating p {
+  margin-bottom: 0.5rem;
+}
+.testimonials .testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.testimonials .testimonial-cards .card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+}/*# sourceMappingURL=index.css.map */

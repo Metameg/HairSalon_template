@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+  
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: gray; // Placeholder for logo
+        }
+  
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto; // Pushes the links to the right
+            margin-right: 2rem; // Adjust the spacing from the right side
+  
+            li {
+                margin-left: 2rem;
+  
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+        }
+  
+        .book-now {
+            text-decoration: none;
+            background: black;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    }
+  }
+  
+  .hero {
+    background: #f5f5f5;
+    text-align: left; // Align text to the left
+    padding: 4rem 2rem; // Adjust padding as needed
+    margin: 0; // Remove any default margin
+    display: flex;
+    justify-content: center;
+  
+    .hero-content {
+        max-width: 1200px; // Set a maximum width for the content
+        width: 100%; // Ensure it takes full width
+        margin: 0 auto; // Center the content horizontally
+  
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+  
+        .location {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+  
+        .hero-buttons {
+            .btn {
+                text-decoration: none;
+                padding: 0.8rem 2rem;
+                border-radius: 5px;
+                font-weight: bold;
+                margin: 0 0.5rem;
+  
+                &.book-now {
+                    background: black;
+                    color: white;
+                }
+  
+                &.view-services {
+                    background: gray;
+                    color: black;
+                }
+            }
+        }
+    }
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+  
+    .hours, .description {
+        max-width: 500px;
+    }
+  
+    .hours {
+        .schedule {
+            .day {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+  
+    .description {
+        p {
+            margin-bottom: 1rem;
+        }
+  
+        .contact-info {
+            p {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+  }
+  
+  .cutting-edge-styles {
+    background: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+  
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+  
+    p {
+        margin-bottom: 2rem;
+    }
+  
+    .instagram-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+  
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+  
+        .image-placeholder {
+            width: 100%;
+            padding-top: 100%; // Maintain aspect ratio
+            background: #ccc;
+        }
+    }
+  }
+  
+  .testimonials {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 4rem 2rem;
+  
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+  
+    .rating {
+        margin-bottom: 2rem;
+  
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+  
+    .testimonial-cards {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+  
+        .card {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            width: 200px;
+        }
+    }
+  }
